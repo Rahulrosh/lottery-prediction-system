@@ -245,10 +245,10 @@ pending_color_prediction = None
 
 
 def send_msg_telegram(message, flag=333):  # 333 code for prediction request 5 for alert
-    bot_token = "7907312021:AAH4Hf9NcgFqKC_wsKZG1lE0cnEgd6SluJw"
-    chat_id = "-1001348318693"
+    bot_token = "TELEGRAM_BOT_TOKEN"
+    chat_id = "chat_ID_1"
     if flag == 5:
-        chat_id = "832429046"
+        chat_id = "chat_ID_2"
     url = f"https://api.telegram.org/bot{bot_token}/sendMessage"
     payload = {
         'chat_id': chat_id,

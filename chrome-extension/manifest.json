@@ -1,0 +1,21 @@
+{
+  "manifest_version": 3,
+  "name": "API Response Sender",
+  "version": "1.0",
+  "permissions": [
+    "storage",
+    "activeTab"
+  ],
+  "host_permissions": [
+    "https://www.royalwin6.com/*"
+  ],
+  
+  "content_scripts": [
+    {
+      "matches": ["https://www.royalwin6.com/*"],
+      "js": ["content.js"],
+      "run_at": "document_end"
+    }
+  ]
+}
+
